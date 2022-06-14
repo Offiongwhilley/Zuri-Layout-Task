@@ -5,6 +5,18 @@ body{
     font-weight: 400;
 }
 
+nav > ul{
+    display: flex;
+    list-style-type: none;
+    gap: 2em;
+}
+
+a{
+    text-decoration: none;
+    color: hsl(179, 100%, 13%);
+    font-weight: bolder;
+}
+
 .container{
     position: absolute;
     top: 50%;

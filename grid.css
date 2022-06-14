@@ -2,10 +2,23 @@ body{
     background-color: black
 }
 
+nav > ul{
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
+    gap: 1em;
+}
+
+a{
+    text-decoration: none;
+    color: rgb(216, 216, 27);
+    font-weight: bolder;
+}
+
 .container{
     width: 700px;
     height: 80vh;
-    padding: 3em;
+    padding: 2em;
     background-color: rgb(11, 11, 32);;
     display: grid;
     grid-template-columns: repeat(10, 1fr);
