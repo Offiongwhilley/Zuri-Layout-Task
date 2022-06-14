@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@600&family=Fraunces:ital,wght@1,700&family=Karla:wght@400;700&family=Lexend+Deca:wght@400;700&family=Orelega+One&family=Overpass:wght@300;400;600;700&family=PT+Sans+Narrow:wght@700&family=Public+Sans:wght@300;400;700&family=Red+Hat+Display:ital,wght@0,400;0,595;1,500&family=Rubik:wght@400;500;700&family=Space+Mono:ital@1&family=Ubuntu:wght@400;500;700&display=swap');
+
+body{
+    font-family: lexend deca;
+    font-weight: 400;
+}
+
+.container{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 700px;
+    display: flex;
+    flex-direction: row;
+    height: 375px;
+}
+
+.sedans{
+    background-color: hsl(31, 77%, 52%);
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+.suvs{
+    background-color: hsl(184, 100%, 22%);
+}
+
+.luxury{
+    background-color:hsl(179, 100%, 13%);
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+img{
+    display: block;
+    margin-top: 1em;
+    margin-left: 1em;
+    width: 50px;
+}
+
+h1{
+    margin-left: 0.7em;
+    text-align: left;
+    color: white;
+}
+
+p{
+    margin: 1em;
+    margin-left: 1.5em;
+    line-height: 1.5;
+    color: hsla(0, 0%, 100%, 0.75);
+}
+
+.btn{
+    margin-top: 3em;
+    margin-left: 1.9em;
+    margin-bottom: 1em;
+    width: 8em;
+    height: 2em;
+    padding-top: 0.5em;
+    padding-bottom: 1.5em;
+    border-radius: 1em;
+    border: none;
+    font-weight: 700;
+}
+
+.btn-sedans{
+    color: hsl(31, 77%, 52%);
+}
+
+.btn-sedans:hover{
+    background-color: hsl(31, 77%, 52%);
+    border: 1px solid white;
+    color: hsla(0, 0%, 100%, 0.75);
+}
+
+.btn-suvs{
+    color: hsl(184, 100%, 22%);
+}
+
+.btn-suvs:hover{
+    background-color: hsl(184, 100%, 22%);
+    border: 1px solid white;
+    color: hsla(0, 0%, 100%, 0.75);
+}
+
+.btn-luxury{
+    color: hsl(179, 100%, 13%);
+}
+
+.btn-luxury:hover{
+    background-color: hsl(179, 100%, 13%);
+    border: 1px solid white;
+    color: hsla(0, 0%, 100%, 0.75);
+}
+
+
+/* media query */
+
+@media screen and (max-width: 700px) {
+        
+    body{
+        font-size: small;
+    }
+    .container{
+        width: 500px;
+    }
+
+    .sedans{
+        border-bottom-left-radius: 5px;
+        border-top-right-radius: 0;
+    }
+
+    .luxury{
+        border-top-right-radius: 5px;
+        border-bottom-left-radius: 0;
+    }
+
+@media screen and (max-width: 550px) {
+    
+    .container{
+        top: 40%;
+        width: 350px;
+        flex-direction: column;
+    }
+
+    .sedans{
+        border-bottom-left-radius: 0;
+        border-top-right-radius: 5px;
+    }
+
+    .luxury{
+        border-top-right-radius: 0;
+        border-bottom-left-radius: 5px;
+    }
